@@ -1,0 +1,216 @@
+/* =========================================================
+   LOGIN PAGE – Bloom & Beyond
+========================================================= */
+
+/* ===== Main Wrapper ===== */
+
+.login-container {
+    min-height: 100vh;
+    background-color: var(--bg-soft);
+    padding: 0;
+}
+
+/* ===== Row Layout ===== */
+
+.login-container .row {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* =========================================================
+   LEFT SIDE — IMAGE
+========================================================= */
+
+.login-container .col-lg-4 {
+    display: flex;
+    padding: 0;
+}
+
+.login-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-soft);
+}
+
+.login-img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =========================================================
+   RIGHT SIDE — LOGIN BOX
+========================================================= */
+
+.login-container .col-lg-8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    background-color: var(--white);
+    padding: 36px 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.login-box form {
+    width: 100%;
+}
+
+.login-box form .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.login-box form .input-group label {
+    font-size: 0.95em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.login-box form .input-group input {
+    padding: 10px 12px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 0.95em;
+}
+
+.login-box form .input-group input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(163, 204, 218, 0.35);
+}
+
+/* =========================================================
+   HELPER TEXT
+========================================================= */
+
+.login-box form .do-you-have {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin: 18px 0;
+}
+
+.login-box form .do-you-have a {
+    color: var(--accent);
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.login-box form .do-you-have a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.login-box form .submit-btn-container {
+    margin-top: 22px;
+}
+
+.login-box form .submit-btn-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 999px;
+    color: var(--text-dark);
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow 0.25s, transform 0.2s;
+}
+
+.login-box form .submit-btn-container button:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   SOCIAL AUTH
+========================================================= */
+
+.login-box .social-auth {
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.login-box .social-auth a {
+    margin: 0 10px;
+    color: var(--text-muted);
+    font-size: 1.2em;
+    transition: color 0.2s ease;
+}
+
+.login-box .social-auth a:hover {
+    color: var(--accent);
+}
+
+.login-box .social-auth a i {
+    cursor: pointer;
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .login-container .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .login-container .col-lg-8 {
+        width: 100%;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-box {
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .login-container .col-lg-4 {
+        width: 100%;
+        padding: 0;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .login-img-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-img-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+}

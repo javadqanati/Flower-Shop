@@ -1,0 +1,165 @@
+/* =========================================================
+   GLOBAL RESET & BASE
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-soft);
+    color: var(--text-dark);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+/* =========================================================
+   HEADER / NAV (GLOBAL)
+========================================================= */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-light);
+}
+
+header nav .nav-left,
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-right a,
+header nav .nav-left a {
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 6px 10px;
+    margin: 0 6px;
+}
+
+header nav a:hover {
+    color: var(--accent);
+}
+
+/* =========================================================
+   BUTTON SYSTEM (GLOBAL)
+========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Primary */
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--text-dark);
+}
+
+.btn-primary:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+/* Secondary */
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+    box-shadow: var(--shadow-soft);
+}
+
+/* Accent / highlight */
+.btn-accent {
+    background-color: var(--highlight);
+    color: var(--text-dark);
+}
+
+/* =========================================================
+   GLOBAL CONTAINERS & UTILITIES
+========================================================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+}
+
+/* =========================================================
+   TEXT HELPERS
+========================================================= */
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* =========================================================
+   FORMS (BASE – page-specific files can extend)
+========================================================= */
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(163, 204, 218, 0.35);
+}

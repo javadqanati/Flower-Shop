@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/main.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/flexboxgrid.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/login.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/theme.css">
+
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/c17804be24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<main>
+    <div class="login-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="login-box">
+                    <form onsubmit="event.preventDefault(); login();">
+                        <div class="input-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required><br><br>
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required><br><br>
+                        </div>
+                        <p class="do-you-have">
+                            Do you not have an account?
+                            <a href="register.html">Register</a>It takes less than a minute.
+                        </p>
+                        <div class="submit-btn-container">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div class="social-auth">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="login-img-container">
+                    <img src="http://localhost/flowershop/svg/login.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script src="http://localhost/flowershop/server/api/auth/js/auth.js"></script>
+</html>

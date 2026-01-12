@@ -1,0 +1,26 @@
+:root {
+    /* Core palette */
+    --pink: #F5D2D2;
+    --yellow: #F8F7BA;
+    --green: #BDE3C3;
+    --blue: #A3CCDA;
+
+    /* Neutrals */
+    --white: #ffffff;
+    --text-dark: #2e2e2e;
+    --text-muted: #6b7280;
+    --border-light: #e5e7eb;
+
+    /* UI roles */
+    --bg-main: var(--white);
+    --bg-soft: #fafafa;
+    --primary: var(--pink);
+    --secondary: var(--green);
+    --accent: var(--blue);
+    --highlight: var(--yellow);
+
+    /* Effects */
+    --radius: 14px;
+    --shadow-soft: 0 8px 24px rgba(0,0,0,0.08);
+    --shadow-hover: 0 12px 32px rgba(0,0,0,0.12);
+}

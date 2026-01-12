@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/main.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/flexboxgrid.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/admin.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/theme.css">
+
+    <title>Admin Panel</title>
+</head>
+
+<body>
+<main>
+    <div class="admin-container">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <aside class="admin-sidebar">
+                    <h2>Admin</h2>
+                    <ul>
+                        <li><a href="#" data-section="dashboard">Dashboard</a></li>
+                        <li><a href="#" data-section="users">Users</a></li>
+                        <li><a href="#" data-section="products">Products</a></li>
+                        <li><a href="#" data-section="orders">Orders</a></li>
+                        <li><a href="#" id="adminLogoutBtn" role="button">Logout</a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-lg-9">
+                <section class="admin-content">
+
+                    <div class="admin-section active" id="dashboard">
+                        <h2>Dashboard</h2>
+
+                        <!-- KPI CARDS -->
+                        <div class="dashboard-cards">
+                            <div class="card">
+                                <h3>Total Orders</h3>
+                                <span id="totalOrders">0</span>
+                            </div>
+
+                            <div class="card">
+                                <h3>Total Revenue (€)</h3>
+                                <span id="totalRevenue">0</span>
+                            </div>
+
+                            <div class="card">
+                                <h3>Total Users</h3>
+                                <span id="totalUsers">0</span>
+                            </div>
+
+                            <div class="card">
+                                <h3>Active Products</h3>
+                                <span id="activeProducts">0</span>
+                            </div>
+
+                            <div class="card warning">
+                                <h3>Pending Orders</h3>
+                                <span id="pendingOrders">0</span>
+                            </div>
+                        </div>
+
+                        <!-- CHARTS -->
+                        <div class="dashboard-charts">
+                            <div class="chart-box">
+                                <canvas id="ordersChart"></canvas>
+                            </div>
+                            <div class="chart-box">
+                                <canvas id="revenueChart"></canvas>
+                            </div>
+                            <div class="chart-box">
+                                <canvas id="statusChart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-section" id="users">
+                        <h2>Users</h2>
+                        <table class="admin-table">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody id="usersList"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="admin-section" id="products">
+                        <h2>Products</h2>
+                        <table class="admin-table">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Price (€)</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody id="productsList"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="admin-section" id="orders">
+                        <h2>Orders</h2>
+                        <table class="admin-table">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>User</th>
+                                <th>Total (€)</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                            </thead>
+                            <tbody id="ordersList"></tbody>
+                        </table>
+                    </div>
+
+                </section>
+            </div>
+
+
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="http://localhost/flowershop/server/api/admin/assets/admin_auth.js"></script>
+<script src="http://localhost/flowershop/server/api/admin/assets/admin.js"></script>
+</body>
+</html>

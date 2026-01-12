@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/main.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/product-card.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/index.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/animate.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/flexboxgrid.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/theme.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Beyond - Online Flower Shop</title>
+    <script src="https://kit.fontawesome.com/c17804be24.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="nav-right">
+            <a href="http://localhost/flowershop/public/index.html"><i class="fa-regular fa-house"></i></a>
+            <a href="http://localhost/flowershop/public/basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="http://localhost/flowershop/public/login.html"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="http://localhost/flowershop/public/search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <h1>Bloom & Beyond</h1>
+        </div>
+        <div class="nav-left">
+            <a href="#" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+    </nav>
+
+    <!-- SLIDER (unchanged) -->
+    <section class="slider">
+        <div class="slides">
+            <div class="item" id="slide1">
+                <img src="http://localhost/flowershop/images/slide1.jpeg">
+                <span>Your one-stop shop for beautiful flowers and gifts.</span>
+            </div>
+            <div class="item" id="slide2">
+                <img src="http://localhost/flowershop/images/slide2.jpg">
+                <span>Your one-stop shop for beautiful flowers and gifts.</span>
+            </div>
+            <div class="item active" id="slide3">
+                <img src="http://localhost/flowershop/images/slide3.jpg">
+                <span>Your one-stop shop for beautiful flowers and gifts.</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <i onclick="setSlide('slide1',1)" class="fas fa-circle"></i>
+            <i onclick="setSlide('slide2',1)" class="fas fa-circle"></i>
+            <i onclick="setSlide('slide3',1)" class="fas fa-circle"></i>
+        </div>
+    </section>
+</header>
+
+<main>
+
+    <!-- GRID PRODUCTS -->
+    <section class="home-page-product-section">
+        <div class="row" id="productGrid">
+            <!-- injected dynamically -->
+        </div>
+    </section>
+
+    <!-- CAROUSEL PRODUCTS -->
+    <section class="dragable-list">
+        <div class="title"><span>Flowers</span></div>
+
+        <div id="owl-product" class="owl-carousel owl-theme">
+            <!-- injected dynamically -->
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="right">
+                <div class="title">About Us</div>
+                <div class="des">
+                    Bloom & Beyond is a modern flower shop delivering elegance, emotion, and freshness.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="left">
+                <div class="title">Follow Us</div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        &copy; 2026 Bloom & Beyond. All rights reserved.
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://localhost/flowershop/js/owl.carousel.min.js"></script>
+<script src="../server/api/auth/js/auth.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

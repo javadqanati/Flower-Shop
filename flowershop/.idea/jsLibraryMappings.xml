@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{admin, admin-auth, admin_auth, animate, auth, basket, c17804be24, chart.js, flexboxgrid, index, jquery-3.4.1, login, main, owl.carousel, owl.theme.default, product, product-card, productCard, search, theme}" />
+  </component>
+</project>

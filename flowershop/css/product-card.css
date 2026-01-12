@@ -1,0 +1,107 @@
+/* =========================================================
+   PRODUCT CARD (REUSABLE)
+========================================================= */
+
+.shopping-card {
+    background-color: var(--white);
+    text-align: center;
+    margin: 15px;
+    padding: 18px 14px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.shopping-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* ================= IMAGE ================= */
+
+.shopping-card .image-sec {
+    position: relative;
+}
+
+.shopping-card .image-sec img {
+    width: 70%;
+}
+
+/* ================= HOT OFFER ================= */
+
+.shopping-card .image-sec .hot-offer {
+    background-color: var(--highlight);
+    color: var(--text-dark);
+    padding: 4px 8px;
+    border-radius: 999px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* ================= TITLE ================= */
+
+.shopping-card .title {
+    color: var(--text-dark);
+    margin: 16px 0;
+    font-size: 1.05em;
+}
+
+/* ================= BUTTON ROW ================= */
+
+.shopping-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+/* ================= PRICE ================= */
+
+.shopping-card .buttons .right .price {
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* ================= ACTION BUTTONS ================= */
+
+.shopping-card .buttons .left {
+    display: flex;
+    gap: 8px;
+}
+
+.shopping-card .buttons .left .extend-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--primary);
+    color: var(--text-dark);
+    width: 42px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: width 0.4s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.shopping-card .buttons .left .extend-btn:hover {
+    width: 110px;
+    box-shadow: var(--shadow-soft);
+}
+
+.shopping-card .buttons .left .extend-btn .b-text {
+    display: none;
+    white-space: nowrap;
+    font-size: 0.9em;
+}
+
+.shopping-card .buttons .left .extend-btn:hover .b-text {
+    display: inline;
+}
+
+.shopping-card .buttons .left .extend-btn .b-icon {
+    color: inherit;
+}

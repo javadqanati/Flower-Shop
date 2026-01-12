@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Basket</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/basket.css">
+    <link rel="stylesheet" href="http://localhost/flowershop/css/theme.css">
+    <script src="https://kit.fontawesome.com/c17804be24.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">← Back to shop</a>
+        <h1>Checkout</h1>
+    </nav>
+</header>
+
+<main>
+    <div class="basket-container">
+
+        <div class="basket-title">
+            <i class="fa-solid fa-basket-shopping"></i>
+            Your Basket
+        </div>
+
+        <!-- JS will inject basket table here -->
+        <section id="basketSection"></section>
+
+        <!-- Summary -->
+        <div class="basket-summary">
+            <div class="summary-box">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summarySubtotal">0 €</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="totalPrice">0 €</span>
+                </div>
+
+                <button class="checkout-btn" id="checkoutBtn">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Checkout -->
+    <section id="checkoutSection" style="display:none">
+        <h2>Shipping Details</h2>
+
+        <form id="checkoutForm" method="post">
+
+            <input type="text" name="address" placeholder="Shipping address" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+
+            <label>
+                <input type="radio" name="payment" value="fakepay" checked>
+                FakePay Gateway
+            </label>
+
+            <button type="submit" class="checkout-btn">
+                Pay Now
+            </button>
+        </form>
+    </section>
+</main>
+
+
+<script src="http://localhost/flowershop/public/js/basket.js"></script>
+</body>
+</html>

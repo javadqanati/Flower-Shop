@@ -1,0 +1,138 @@
+/* =========================================================
+   SEARCH PAGE
+========================================================= */
+
+.search-page {
+    padding: 50px 20px;
+}
+
+/* ================= SEARCH BAR ================= */
+
+.search-bar-section {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar-section input {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border-light);
+    font-size: 0.95rem;
+}
+
+.search-bar-section button {
+    padding: 0 22px;
+    border-radius: 999px;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.search-bar-section button:hover {
+    box-shadow: var(--shadow-soft);
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories-section {
+    margin-bottom: 60px;
+}
+
+.categories-section h2 {
+    margin-bottom: 20px;
+}
+
+.category-card {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ================= RESULTS ================= */
+
+.results-section h2 {
+    margin-bottom: 25px;
+}
+
+.results-section .shopping-card {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background-color: var(--accent);
+    color: var(--text-dark);
+    margin-top: 60px;
+}
+
+footer .right,
+footer .left {
+    padding: 40px;
+}
+
+footer .right .title,
+footer .left .title {
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+footer .right .des {
+    color: rgba(0,0,0,0.7);
+    line-height: 1.8em;
+}
+
+footer .left .socials {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+footer .left .socials i {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+footer .left .socials i:hover {
+    opacity: 1;
+}
+
+footer .bottom {
+    background-color: rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+/* =========================================================
+   PAGE LAYOUT FIX (footer at bottom)
+========================================================= */
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-page {
+    flex: 1; /* 🔑 this pushes footer down */
+}
+

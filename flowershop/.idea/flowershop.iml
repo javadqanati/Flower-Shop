@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="main" level="application" />
+    <orderEntry type="library" name="flexboxgrid" level="application" />
+    <orderEntry type="library" name="login" level="application" />
+    <orderEntry type="library" name="admin" level="application" />
+    <orderEntry type="library" name="admin-auth" level="application" />
+    <orderEntry type="library" name="c17804be24" level="application" />
+    <orderEntry type="library" name="auth" level="application" />
+    <orderEntry type="library" name="admin_auth" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1" level="application" />
+    <orderEntry type="library" name="owl.carousel" level="application" />
+    <orderEntry type="library" name="index" level="application" />
+    <orderEntry type="library" name="animate" level="application" />
+    <orderEntry type="library" name="owl.theme.default" level="application" />
+    <orderEntry type="library" name="chart.js" level="application" />
+    <orderEntry type="library" name="basket" level="application" />
+    <orderEntry type="library" name="theme" level="application" />
+    <orderEntry type="library" name="product" level="application" />
+    <orderEntry type="library" name="search" level="application" />
+    <orderEntry type="library" name="productCard" level="application" />
+    <orderEntry type="library" name="product-card" level="application" />
+  </component>
+</module>
